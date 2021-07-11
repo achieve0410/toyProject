@@ -1,7 +1,7 @@
 import json
 import requests
 
-api_key = "RGAPI-02988fc3-11dc-40d0-aa61-3a27504fc1a0"
+api_key = "MY API KEY"
 
 print("1: 플레이어 검색")
 selectnum = input("번호를 입력해주세요: ")

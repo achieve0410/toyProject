@@ -12,7 +12,7 @@
 
 from riotwatcher import LolWatcher, ApiError
 
-lol_watcher = LolWatcher('RGAPI-02988fc3-11dc-40d0-aa61-3a27504fc1a0')
+lol_watcher = LolWatcher('MY API KEY')
 
 my_region = 'KR'
 
