@@ -2,7 +2,7 @@
 # import pandas as pd
 
 # # golbal variables
-# api_key = 'RGAPI-02988fc3-11dc-40d0-aa61-3a27504fc1a0'
+# api_key = 'MY API KEY'
 # watcher = LolWatcher(api_key)
 # my_region = 'KR'
 
