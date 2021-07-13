@@ -43,6 +43,14 @@ LOCALE_PATHS = [str(ROOT_DIR / "locale")]
 
 DATABASES = {
     "default": env.db("DATABASE_URL", default="postgres:///myopgg"),
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #     'NAME': 'myopgg',
+    #     'USER': 'wonhyo',
+    #     'PASSWORD': 'putyourpassword',
+    #     'HOST': 'localhost',
+    #     'PORT': '5432',
+    # }
 }
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
 
@@ -71,10 +79,12 @@ THIRD_PARTY_APPS = [
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
+    "rest_framework",
 ]
 
 LOCAL_APPS = [
     "myopgg.users.apps.UsersConfig",
+    "myopgg.mylol.apps.LoLConfig",
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
