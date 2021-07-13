@@ -1,5 +1,4 @@
 
-from . import myapikeys
 from . import encryptId
 import requests
 
@@ -17,8 +16,8 @@ def getTier(DEVELOPMENTAPIKEY,summonerName):
     data = res.json()
     return data[0]["tier"]
 
-DEVELOPMENTAPIKEY = myapikeys.myapikey()
-summonerName = "HIDE ON BUSH"
+# DEVELOPMENTAPIKEY = myapikeys.myapikey()
+# summonerName = "HIDE ON BUSH"
 
 # print(getTier(DEVELOPMENTAPIKEY,summonerName))
 # print("In tier.py")

@@ -1,7 +1,5 @@
-from . import myapikeys
+
 from . import encryptId
-# import myapikeys
-# import encryptId
 import requests
 
 def getMatchId(DEVELOPMENTAPIKEY,summonerName):

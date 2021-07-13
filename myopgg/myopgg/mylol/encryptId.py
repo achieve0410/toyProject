@@ -1,4 +1,4 @@
-from . import myapikeys
+
 import requests
 from urllib import parse
 

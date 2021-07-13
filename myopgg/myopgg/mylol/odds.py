@@ -1,8 +1,6 @@
-from . import myapikeys
+
 from . import encryptId
 from . import winorlose
-# import myapikeys
-# import encryptId
 import requests
 
 def getOdds(DEVELOPMENTAPIKEY,summonerName):

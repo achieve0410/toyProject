@@ -1,9 +1,6 @@
-from . import myapikeys
+
 from . import matchId
 from . import encryptId
-# import myapikeys
-# import matchId
-# import encryptId
 import requests
 
 def WinorLose(DEVELOPMENTAPIKEY,summonerName, gameId):
