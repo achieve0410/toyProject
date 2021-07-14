@@ -28,7 +28,7 @@ class getTier(APIView):
 
 class getRate(APIView):
     def get(self, request, format=None):
-        summoner_name = request.query_params.get('summoner_name', None)
+        summoner_name = request.query_params.get('name', None)
         if summoner_name is not None:
             api_key = models.Riot.objects.get().api_key
             summoner_rate = odds.getOdds(api_key,summoner_name)

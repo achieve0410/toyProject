@@ -3,7 +3,7 @@ from . import encryptId
 import requests
 
 def getTier(DEVELOPMENTAPIKEY,summonerName):
-    encryptedId = encryptId.encrypt(DEVELOPMENTAPIKEY,summonerName)
+    encryptedId = list(encryptId.encrypt(DEVELOPMENTAPIKEY,summonerName))[0]
     headers = {
         "Origin": "https://developer.riotgames.com",
         "Accept-Charset": "application/x-www-form-urlencoded; charset=UTF-8",

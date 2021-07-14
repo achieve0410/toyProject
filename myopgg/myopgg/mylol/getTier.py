@@ -10,7 +10,7 @@ class getTier(APIView):
         summoner_name = request.query_params.get('summoner_name', None)
         if summoner_name is not None:
             api_key = models.Riot.objects.get().api_key
-            summoner_tier = tier.getTier(api_key,summoner_name)
+            summoner_tier = tier.getTier(api_key,summoner_name)[0]
             response_data = {}
             response_data['tier'] = summoner_tier
             return Response(data=response_data, status=status.HTTP_200_OK)
